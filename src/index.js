@@ -8,7 +8,15 @@ const getScores = async () => {
   return data;
 };
 
-
+const postRecord = async (record) => {
+  const response = await fetch(`${baseUrl}/games/I2dld6bFpfO3V6aFFp3g/scores`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(record),
+  });
+};
 
 const scores = [
   { name: 'John', score: 55 },
