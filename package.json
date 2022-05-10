@@ -5,27 +5,20 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.4",
     "hint": "^6.1.10",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
   },
-  "name": "kelvin-portfolio",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "name": "leaderboard-microverse",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kelvinbush/kelvin-portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kelvinbush/kelvin-portfolio/issues"
-  },
-  "homepage": "https://github.com/kelvinbush/kelvin-portfolio#readme"
+  "repository": "https://github.com/kelvinbush/leaderboard-microverse.git",
+  "author": "Kelvin Bush <kelybush@gmail.com>",
+  "license": "MIT"
 }
