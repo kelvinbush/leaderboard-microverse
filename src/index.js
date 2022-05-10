@@ -4,7 +4,6 @@ const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api'
 const scoreList = document.getElementById('scores-list');
 const refreshButton = document.getElementById('refresh');
 
-
 const getScores = async () => {
   try {
     const response = await fetch(`${baseUrl}/games/I2dld6bFpfO3V6aFFp3g/scores`);
