@@ -19,7 +19,10 @@
   "name": "leaderboard-microverse",
   "version": "1.0.0",
   "main": "src/index.js",
-  "repository": "https://github.com/kelvinbush/leaderboard-microverse.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvinbush/leaderboard-microverse.git"
+  },
   "author": "Kelvin Bush <kelybush@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -27,5 +30,11 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack serve --open"
-  }
+  },
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "bugs": {
+    "url": "https://github.com/kelvinbush/leaderboard-microverse/issues"
+  },
+  "homepage": "https://github.com/kelvinbush/leaderboard-microverse#readme",
+  "keywords": []
 }
