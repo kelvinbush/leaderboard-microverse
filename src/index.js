@@ -1,5 +1,15 @@
 import './style.css';
 
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+
+const getScores = async () => {
+  const response = await fetch(`${baseUrl}/games/I2dld6bFpfO3V6aFFp3g/scores`);
+  const data = await response.json();
+  return data;
+};
+
+
+
 const scores = [
   { name: 'John', score: 55 },
   { name: 'Mike', score: 65 },
