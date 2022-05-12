@@ -13,9 +13,6 @@ body {
   padding: 20px;
 }
 
-main {
-}
-
 #main-content {
   display: flex;
   flex-direction: column-reverse;
@@ -39,7 +36,8 @@ button {
   border: none;
   border-radius: 5px;
 }
-.add{
+
+.add {
   margin-bottom: 20px;
 }
 
@@ -99,12 +97,12 @@ input:focus {
   body {
     overflow: hidden;
   }
-  
+
   #main-content {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
-  
+
   main {
     max-width: 800px;
     margin: 5rem auto;
@@ -113,29 +111,29 @@ input:focus {
     border-radius: 10px;
     padding: 20px;
   }
+
   .scores,
   .add {
     padding: 20px;
   }
-  
+
   ul {
     max-height: 25rem;
     overflow: auto;
   }
-  
+
   ul::-webkit-scrollbar {
     width: 5px;
     height: 5px;
   }
-  
+
   ul::-webkit-scrollbar-track {
     background-color: rgba(255, 0, 0, 0.1);
     border-radius: 10px;
   }
-  
+
   ul::-webkit-scrollbar-thumb {
     background-color: #bdbdbd;
     border-radius: 10px;
   }
-  
 }
