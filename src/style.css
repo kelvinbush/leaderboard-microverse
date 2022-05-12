@@ -7,12 +7,15 @@
 }
 
 body {
-  max-width: 800px;
-  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   background: #fafafa;
   padding: 20px;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 h1 {
@@ -27,18 +30,28 @@ h2 {
 
 button {
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 8px 12px;
+  color: white;
+  background: #f9a109;
+  border: none;
+  border-radius: 5px;
 }
 
-.scores,
 .add {
-  padding: 20px;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #80485b;
+  font-weight: 500;
+  font-style: italic;
 }
 
 ul {
   list-style: none;
   margin: 20px 0;
-  border: 1px solid #494848;
+  border: 1px solid #f9a109;
+  border-radius: 5px;
 }
 
 li {
@@ -47,7 +60,8 @@ li {
 }
 
 li:nth-child(even) {
-  background: rgba(73, 72, 72, 0.41);
+  background: #f2f2f2;
+  border-radius: 12px;
 }
 
 .scores div {
@@ -69,13 +83,57 @@ form button {
 input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #494848;
+  border: 2px solid #bdbdbd;
   margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #f9a109;
 }
 
 @media screen and (min-width: 600px) {
-  main {
+  body {
+    overflow: hidden;
+  }
+
+  #main-content {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 5rem auto;
+    background-color: #fafafe;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .scores,
+  .add {
+    padding: 20px;
+  }
+
+  ul {
+    max-height: 25rem;
+    overflow: auto;
+  }
+
+  ul::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ul::-webkit-scrollbar-track {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  ul::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: 10px;
   }
 }
