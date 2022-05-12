@@ -11,11 +11,9 @@ body {
   font-size: 16px;
   background: #fafafa;
   padding: 20px;
-  overflow: hidden;
 }
 
 main {
-  padding: 20px;
 }
 
 #main-content {
@@ -41,14 +39,14 @@ button {
   border: none;
   border-radius: 5px;
 }
-
-.scores,
-.add {
-  padding: 20px;
+.add{
+  margin-bottom: 20px;
 }
 
 span {
   color: #80485b;
+  font-weight: 500;
+  font-style: italic;
 }
 
 ul {
@@ -56,23 +54,6 @@ ul {
   margin: 20px 0;
   border: 1px solid #f9a109;
   border-radius: 5px;
-  max-height: 25rem;
-  overflow: auto;
-}
-
-ul::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-ul::-webkit-scrollbar-track {
-  background-color: rgba(255, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-ul::-webkit-scrollbar-thumb {
-  background-color: #bdbdbd;
-  border-radius: 10px;
 }
 
 li {
@@ -115,16 +96,46 @@ input:focus {
 }
 
 @media screen and (min-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+  
   #main-content {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
-
+  
   main {
     max-width: 800px;
     margin: 5rem auto;
     background-color: #fafafe;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    padding: 20px;
   }
+  .scores,
+  .add {
+    padding: 20px;
+  }
+  
+  ul {
+    max-height: 25rem;
+    overflow: auto;
+  }
+  
+  ul::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ul::-webkit-scrollbar-track {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  ul::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: 10px;
+  }
+  
 }
