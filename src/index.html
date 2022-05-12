@@ -6,24 +6,26 @@
     <title>Leaderboard &mdash;app</title>
 </head>
 <body>
-<h1>Leaderboard</h1>
 <main>
-    <section class="scores">
-        <div>
-            <h2>Recent Scores</h2>
-            <button id="refresh">Refresh</button>
-        </div>
-        <ul id="scores-list">
-        </ul>
-    </section>
-    <section class="add">
-        <h2>Add your score</h2>
-        <form id="add-score-form">
-            <input type="text" name="user" placeholder="Name">
-            <input type="number" name="score" placeholder="Score">
-            <button>Submit</button>
-        </form>
-    </section>
+    <h1>Leaderboard</h1>
+    <div id="main-content">
+        <section class="scores">
+            <div>
+                <h2>Recent Scores</h2>
+                <button id="refresh">Refresh</button>
+            </div>
+            <ul id="scores-list">
+            </ul>
+        </section>
+        <section class="add">
+            <h2>Add your score</h2>
+            <form id="add-score-form">
+                <input type="text" name="user" placeholder="Name" required>
+                <input type="number" name="score" placeholder="Score" required>
+                <button>Submit</button>
+            </form>
+        </section>
+    </div>
 </main>
 </body>
 </html>
