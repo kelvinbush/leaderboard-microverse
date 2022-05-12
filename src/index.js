@@ -8,7 +8,7 @@ const getScores = async () => {
   try {
     const response = await fetch(`${baseUrl}/games/I2dld6bFpfO3V6aFFp3g/scores`);
     const data = await response.json();
-    scoreList.innerHTML = data.result.map((score) => `<li>${score.user}: ${score.score}</li>`).join('');
+    scoreList.innerHTML = data.result.map((score) => `<li>${score.user}: <span>${score.score}</span></li>`).join('');
   } catch (error) {
     scoreList.innerHTML = '<li>No scores found</li>';
   }
